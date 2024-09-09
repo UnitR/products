@@ -1,0 +1,70 @@
+services:
+  aspire-dashboard:
+    container_name: "aspire-dashboard"
+    image: "mcr.microsoft.com/dotnet/aspire-dashboard:8.0"
+    environment:
+      DOTNET_DASHBOARD_UNSECURED_ALLOW_ANONYMOUS: "true"
+    ports:
+    - target: 18888
+      published: 18888
+    restart: unless-stopped
+  sqlserver:
+    container_name: "sqlserver"
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "techtest123!"
+      OTEL_EXPORTER_OTLP_ENDPOINT: "http://aspire-dashboard:18889"
+      OTEL_SERVICE_NAME: "sqlserver"
+    volumes:
+    - "techtest-apphost-sqlserver-data:/var/opt/mssql"
+    ports:
+    - target: 1433
+      published: 1433
+    restart: unless-stopped
+  migrationService:
+    container_name: "migrationService"
+    image: "migrationservice:latest"
+    environment:
+      OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EXCEPTION_LOG_ATTRIBUTES: "true"
+      OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EVENT_LOG_ATTRIBUTES: "true"
+      OTEL_DOTNET_EXPERIMENTAL_OTLP_RETRY: "in_memory"
+      DELETE_AND_RECREATE_DB: "true"
+      ConnectionStrings__TechTest: "Server=sqlserver,1433;User ID=sa;Password=techtest123!;TrustServerCertificate=true;Database=TechTest"
+      OTEL_EXPORTER_OTLP_ENDPOINT: "http://aspire-dashboard:18889"
+      OTEL_SERVICE_NAME: "migrationService"
+    restart: unless-stopped
+  api:
+    container_name: "api"
+    image: "api:latest"
+    environment:
+      OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EXCEPTION_LOG_ATTRIBUTES: "true"
+      OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EVENT_LOG_ATTRIBUTES: "true"
+      OTEL_DOTNET_EXPERIMENTAL_OTLP_RETRY: "in_memory"
+      ASPNETCORE_FORWARDEDHEADERS_ENABLED: "true"
+      HTTP_PORTS: "8080"
+      ConnectionStrings__TechTest: "Server=sqlserver,1433;User ID=sa;Password=techtest123!;TrustServerCertificate=true;Database=TechTest"
+      OTEL_EXPORTER_OTLP_ENDPOINT: "http://aspire-dashboard:18889"
+      OTEL_SERVICE_NAME: "api"
+    ports:
+    - target: 8080
+      published: 10000
+    - target: 8443
+      published: 10001
+    restart: unless-stopped
+  react:
+    container_name: "react"
+    image: "react:latest"
+    environment:
+      NODE_ENV: "development"
+      services__api__http__0: "http://api:8080"
+      BROWSER: "none"
+      PORT: "8000"
+      OTEL_EXPORTER_OTLP_ENDPOINT: "http://aspire-dashboard:18889"
+      OTEL_SERVICE_NAME: "react"
+    ports:
+    - target: 8000
+      published: 8000
+    restart: unless-stopped
+volumes:
+  techtest-apphost-sqlserver-data: {}
