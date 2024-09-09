@@ -33,7 +33,7 @@ services:
       ConnectionStrings__TechTest: "Server=sqlserver,1433;User ID=sa;Password=techtest123!;TrustServerCertificate=true;Database=TechTest"
       OTEL_EXPORTER_OTLP_ENDPOINT: "http://aspire-dashboard:18889"
       OTEL_SERVICE_NAME: "migrationService"
-    restart: unless-stopped
+    restart: no
   api:
     container_name: "api"
     image: "api:latest"
