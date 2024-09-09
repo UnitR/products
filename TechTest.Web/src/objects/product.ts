@@ -8,4 +8,5 @@ export interface Product {
     categoryId: number;
     category: Category;
     quantity: number;
+    dateAdded: Date;
 }

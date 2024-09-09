@@ -1,7 +1,7 @@
 // import { type MRT_ColumnDef, MRT_Table, useMantineReactTable } from 'mantine-react-table';
+import dayjs from 'dayjs';
 import { DataTable } from 'mantine-datatable';
-import React, { useMemo } from 'react';
-import { Product } from '../objects/product';
+import React from 'react';
 import { ProductsGridProps } from '../objects/products-grid-props';
 
 function ProductsGrid({products}: ProductsGridProps) {
@@ -33,7 +33,11 @@ function ProductsGrid({products}: ProductsGridProps) {
                     }, {
                         accessor: 'quantity',
                         title: 'Stock',
-                    },
+                    }, {
+                        accessor: 'dateAdded',
+                        title: 'Date Added',
+                        render: ({dateAdded}) => dayjs(dateAdded).format('DD/MM/YYYY'),
+                    }
                 ]}
                 records={products}
             />
