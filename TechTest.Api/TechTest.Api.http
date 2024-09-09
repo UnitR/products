@@ -1,0 +1,16 @@
+@TechTest_Api_HostAddress = http://localhost:5272
+
+GET {{TechTest_Api_HostAddress}}/products
+Accept: application/json
+
+###
+
+GET {{TechTest_Api_HostAddress}}/products/charts/quantity
+Accept: application/json
+
+###
+
+GET {{TechTest_Api_HostAddress}}/products/charts/timeframe
+Accept: application/json
+
+###

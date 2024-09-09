@@ -1,0 +1,59 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AJsonSerializerContext_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2024_002E2_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F94125f469e4d403caa9218894df9d5f0191800_003Fd1_003F059fd960_003FJsonSerializerContext_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AParameterResourceBuilderExtensions_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2024_002E2_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F02389220564c4fae9eea9b9cbc95cfc4b4c20_003F3b_003F46369fdb_003FParameterResourceBuilderExtensions_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003ATask_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2024_002E2_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003Fa0741529c8554d199992ef9e50684668d82800_003F3e_003Ff83dbc47_003FTask_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/PencilsConfiguration/ActualSeverity/@EntryValue">WARNING</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e89d6d8c_002Dc9ff_002D459b_002D8b67_002D35f7e39f0674/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" FrameworkVersion="Automatic" IsActive="True" Name="DeleteCostItemFormulaServiceFixture #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Or&gt;
+    &lt;And&gt;
+      &lt;Or&gt;
+        &lt;And&gt;
+          &lt;TestAncestor&gt;
+            &lt;TestId&gt;MSTest::4EB86D15-B79D-4C92-AE40-66CF11236FCC::.NETFramework,Version=v4.8::ActiveRisk.Arm.Services.UnitTests.CostItems.DeleteCostItemFormulaServiceFixture&lt;/TestId&gt;
+            &lt;TestId&gt;MSTest::B49723E2-1F2E-4894-9094-E2B9E5370552::.NETFramework,Version=v4.8::ActiveRisk.Arm.Services.IntegrationTests.CostItems.AssessmentCategoryFormulaDataFixture&lt;/TestId&gt;
+            &lt;TestId&gt;MSTest::5692B603-5B95-4D24-890B-0CF92BE48AF4::net6.0::ActiveRisk.Arm.Data.NHibernate.IntegrationTests.DashboardRetrieverFixture.GetDashboardShouldNotReturnDashboardFromAnotherBusinessArea&lt;/TestId&gt;
+            &lt;TestId&gt;MSTest::4EB86D15-B79D-4C92-AE40-66CF11236FCC::.NETFramework,Version=v4.8::ActiveRisk.Arm.Services.UnitTests.Dashboards.DashboardDeleteServiceFixture&lt;/TestId&gt;
+            &lt;TestId&gt;MSTest::4EB86D15-B79D-4C92-AE40-66CF11236FCC::.NETFramework,Version=v4.8::ActiveRisk.Arm.Services.UnitTests.Dashboards.DashboardRetrieverServiceFixture&lt;/TestId&gt;
+            &lt;TestId&gt;MSTest::4EB86D15-B79D-4C92-AE40-66CF11236FCC::.NETFramework,Version=v4.8::ActiveRisk.Arm.Services.UnitTests.KRIs.Menus.KRIsCopyCutDeleteMenuRetrieverFixture&lt;/TestId&gt;
+            &lt;TestId&gt;MSTest::5692B603-5B95-4D24-890B-0CF92BE48AF4::.NETFramework,Version=v4.8::ActiveRisk.Arm.Data.NHibernate.Responses.ResponseBulkAccessRightDataFixture.ShouldGetAccessRightsForIncidentResponses&lt;/TestId&gt;
+            &lt;TestId&gt;MSTest::5692B603-5B95-4D24-890B-0CF92BE48AF4::.NETFramework,Version=v4.8::ActiveRisk.Arm.Data.NHibernate.Responses.ResponseBulkAccessRightDataFixture&lt;/TestId&gt;
+            &lt;TestId&gt;MSTest::5692B603-5B95-4D24-890B-0CF92BE48AF4::net6.0::ActiveRisk.Arm.Data.NHibernate.Responses.ResponseBulkAccessRightDataFixture.ShouldGetNullAccessRightWhenNotDefined&lt;/TestId&gt;
+          &lt;/TestAncestor&gt;
+          &lt;Not&gt;
+            &lt;And&gt;
+              &lt;TargetFrameworkId&gt;net6.0&lt;/TargetFrameworkId&gt;
+              &lt;Namespace&gt;ActiveRisk.Arm.Data.NHibernate.Responses&lt;/Namespace&gt;
+              &lt;Project Location="C:\Projects\ARM\ARM\User Interface\ActiveRisk.Arm.Data.NHibernate.IntegrationTests" Presentation="&amp;lt;Integration Tests&amp;gt;\&amp;lt;ActiveRisk.Arm.Data.NHibernate.IntegrationTests&amp;gt;" /&gt;
+            &lt;/And&gt;
+          &lt;/Not&gt;
+        &lt;/And&gt;
+        &lt;TestAncestor&gt;
+          &lt;TestId&gt;MSTest::5692B603-5B95-4D24-890B-0CF92BE48AF4::net6.0::ActiveRisk.Arm.Data.NHibernate.Responses.ResponseBulkAccessRightDataFixture.ShouldGetNullAccessRightWhenNotDefined&lt;/TestId&gt;
+          &lt;TestId&gt;MSTest::5692B603-5B95-4D24-890B-0CF92BE48AF4::net6.0::ActiveRisk.Arm.Data.NHibernate.Responses.ResponseBulkAccessRightDataFixture.ShouldNotGetNullAccessForResponseIfNotDefinedWhenOwner&lt;/TestId&gt;
+          &lt;TestId&gt;MSTest::5692B603-5B95-4D24-890B-0CF92BE48AF4::net6.0::ActiveRisk.Arm.Data.NHibernate.Responses.ResponseBulkAccessRightDataFixture&lt;/TestId&gt;
+          &lt;TestId&gt;MSTest::5692B603-5B95-4D24-890B-0CF92BE48AF4::.NETFramework,Version=v4.8::ActiveRisk.Arm.Data.NHibernate.IntegrationTests.Responses.ResponseBulkAccessRightDataFixture.ShouldBeAbleToHandleALargeNumberOfResponses&lt;/TestId&gt;
+          &lt;TestId&gt;MSTest::5692B603-5B95-4D24-890B-0CF92BE48AF4::net6.0::ActiveRisk.Arm.Data.NHibernate.IntegrationTests.Responses.ResponseBulkAccessRightDataFixture&lt;/TestId&gt;
+        &lt;/TestAncestor&gt;
+      &lt;/Or&gt;
+      &lt;Not&gt;
+        &lt;Or&gt;
+          &lt;Project Location="C:\Projects\ARM\ARM\User Interface\ActiveRisk.Arm.Services.IntegrationTests" Presentation="&amp;lt;Integration Tests&amp;gt;\&amp;lt;ActiveRisk.Arm.Services.IntegrationTests&amp;gt;" /&gt;
+          &lt;Project Location="C:\Projects\ARM\ARM\User Interface" Presentation="&amp;lt;Unit Tests&amp;gt;" /&gt;
+        &lt;/Or&gt;
+      &lt;/Not&gt;
+    &lt;/And&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;MSTest::4EB86D15-B79D-4C92-AE40-66CF11236FCC::.NETFramework,Version=v4.8::ActiveRisk.Arm.Services.UnitTests.Responses.ResponseBulkAccessRightRetrieverFixture.ReturnsAdminAccessForInternalAdminUser&lt;/TestId&gt;
+      &lt;TestId&gt;MSTest::4EB86D15-B79D-4C92-AE40-66CF11236FCC::.NETFramework,Version=v4.8::ActiveRisk.Arm.Services.UnitTests.Responses.ResponseBulkAccessRightRetrieverFixture&lt;/TestId&gt;
+      &lt;TestId&gt;MSTest::4EB86D15-B79D-4C92-AE40-66CF11236FCC::.NETFramework,Version=v4.8::ActiveRisk.Arm.Services.UnitTests.CopyItem.CopyPasteMenuRetrieverFixture&lt;/TestId&gt;
+      &lt;TestId&gt;MSTest::4EB86D15-B79D-4C92-AE40-66CF11236FCC::.NETFramework,Version=v4.8::ActiveRisk.Arm.Services.UnitTests.MoveItem.CutPasteMenuRetrieverFixture&lt;/TestId&gt;
+      &lt;TestId&gt;MSTest::4EB86D15-B79D-4C92-AE40-66CF11236FCC::.NETFramework,Version=v4.8::ActiveRisk.Arm.Services.UnitTests.KRIs.Menus.KRIsCopyCutDeleteMenuRetrieverFixture&lt;/TestId&gt;
+      &lt;TestId&gt;MSTest::4EB86D15-B79D-4C92-AE40-66CF11236FCC::.NETFramework,Version=v4.8::ActiveRisk.Arm.Services.UnitTests.Menu.ItemSecurityMenuServiceFixture.GetMenu_ChecksParentAccessRights&lt;/TestId&gt;
+      &lt;TestId&gt;MSTest::4EB86D15-B79D-4C92-AE40-66CF11236FCC::.NETFramework,Version=v4.8::ActiveRisk.Arm.Services.UnitTests.Menu.ItemSecurityMenuServiceFixture&lt;/TestId&gt;
+      &lt;TestId&gt;MSTest::4EB86D15-B79D-4C92-AE40-66CF11236FCC::.NETFramework,Version=v4.8::ActiveRisk.Arm.Services.UnitTests.CopyPasteItem.CopyPasteMenuRetrieverFixture&lt;/TestId&gt;
+      &lt;TestId&gt;MSTest::5692B603-5B95-4D24-890B-0CF92BE48AF4::.NETFramework,Version=v4.8::ActiveRisk.Arm.Data.NHibernate.IntegrationTests.CostItems.CostItemDataFixture&lt;/TestId&gt;
+      &lt;TestId&gt;MSTest::5692B603-5B95-4D24-890B-0CF92BE48AF4::net6.0::ActiveRisk.Arm.Data.NHibernate.IntegrationTests.CostItems.CostItemDataFixture&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit2x::4B3E5597-006B-478D-BAB3-4B8B5354E268::.NETFramework,Version=v4.8::ActiveRisk.Arm.Services.UnitTests.Services.Filtering.FilterServiceFixture.TestToSelectStatementEnumParameters&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+  &lt;/Or&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

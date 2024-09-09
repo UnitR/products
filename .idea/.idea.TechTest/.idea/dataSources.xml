@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="TechTest" uuid="ee660ef2-94ae-4051-9fa8-c97f67b15c7b">
+      <driver-ref>sqlserver.jb</driver-ref>
+      <jdbc-driver>com.jetbrains.jdbc.sqlserver.SqlServerDriver</jdbc-driver>
+      <jdbc-url>Server=127.0.0.1,57865;User ID=sa;Password=techtest123!;TrustServerCertificate=true;Database=TechTest</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>
